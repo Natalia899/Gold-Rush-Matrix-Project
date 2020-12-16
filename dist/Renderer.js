@@ -1,0 +1,5 @@
+class Renderer {
+    renderBoard(matrix){
+        
+    }
+}
