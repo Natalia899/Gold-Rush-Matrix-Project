@@ -1,0 +1,37 @@
+.row {
+    
+  
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    border: solid 2px black;
+   margin: 0;
+    display: inline-block;
+
+}
+
+#board-container{
+/* 
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-areas:  "s s s s s"; */
+
+    background-color: beige;
+}
+
+.scores-container{
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "o t";
+    border: solid rgb(141, 169, 196) 2px;
+    background-color: rgb(234, 244, 244);
+}
+.score1-container {
+grid-area: o;
+}
+.score2-container {
+    grid-area: t;
+}

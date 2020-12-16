@@ -13,7 +13,30 @@
 <body>
  
 
-    <div>nataaall</div>
+    <div id='board-container'></div>
+    <div class='scores-container'>
+    <div id='score1-container'></div>
+    <div id='score2-container'></div>
+</div>
+
+    <script id="board-template" type="text/x-handlebars-template">
+        {{#each matrix}} 
+        <div class='row'>{{#each this}} 
+              <div class='square'>{{this}}</div>
+              {{/each}}</div>
+      {{/each}}
+          
+    </script>
+
+    <script id="score1-template" type="text/x-handlebars-template">
+       <div class='player1Score'>Player 1: {{score}} </div>
+    </script>
+    <script id="score2-template" type="text/x-handlebars-template">
+        <div class='player2Score'>Player 2: {{score}} </div>
+     </script>
+   
+
+
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src='./handlebars/dist/handlebars.js'></script>
