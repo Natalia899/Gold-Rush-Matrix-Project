@@ -1,27 +1,28 @@
-.row {
-    
-  
+body {
+    font-family: 'Caveat', cursive;
+    font-size: large;
 }
 
-.square{
+.square {
     width: 80px;
     height: 80px;
-    border: solid 2px black;
-   margin: 0;
+    border: solid rgb(141, 169, 196) 2px;
+    margin: 0;
     display: inline-block;
-
 }
 
-#board-container{
-/* 
+#board-container {
+    /* 
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    grid-template-areas:  "s s s s s"; */
-
+    margin-left: 25%;
+    margin-top: 5%;
+    width: fit-content;
     background-color: beige;
 }
 
-.scores-container{
+.scores-container {
     height: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,9 +30,11 @@
     border: solid rgb(141, 169, 196) 2px;
     background-color: rgb(234, 244, 244);
 }
+
 .score1-container {
-grid-area: o;
+    grid-area: o;
 }
+
 .score2-container {
     grid-area: t;
 }
