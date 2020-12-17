@@ -30,7 +30,9 @@
     <script id="board-template" type="text/x-handlebars-template">
         {{#each matrix}} 
         <div class='row'>{{#each this}} 
-              <div class='square'>{{this}}</div>
+              <div class='square'>
+                  <div class='{{this}}'>{{this}}</div>
+                </div>
               {{/each}}</div>
       {{/each}}
           

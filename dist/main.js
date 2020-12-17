@@ -19,44 +19,44 @@ $('#start').on('click', () => {
 $(document).keypress(function (e) {
     switch (e.which) {
         case 119:
-            board.limitBounds(1, "up")
+            board.movePlayer(1, "up")
             render.renderBoard(data)
             //console.log(scores);
             render.renderScore1(board.players[0])
             break;
         case 115:
-            board.limitBounds(1, "down")
+            board.movePlayer(1, "down")
             render.renderBoard(data)
             //  console.log(scores);
             render.renderScore1(board.players[0])
             break;
         case 97:
-            board.limitBounds(1, "left")
+            board.movePlayer(1, "left")
             render.renderBoard(data)
             render.renderScore1(board.players[0])
             break;
         case 100:
-            board.limitBounds(1, "right")
+            board.movePlayer(1, "right")
             render.renderBoard(data)
             render.renderScore1(board.players[0])
             break;
         case 105:
-            board.limitBounds(2, "up")
+            board.movePlayer(2, "up")
             render.renderBoard(data)
             render.renderScore2(board.players[1])
             break;
         case 107:
-            board.limitBounds(2, "down")
+            board.movePlayer(2, "down")
             render.renderBoard(data)
             render.renderScore2(board.players[1])
             break;
         case 106:
-            board.limitBounds(2, "left")
+            board.movePlayer(2, "left")
             render.renderBoard(data)
             render.renderScore2(board.players[1])
             break;
         case 108:
-            board.limitBounds(2, "right")
+            board.movePlayer(2, "right")
             render.renderBoard(data)
             render.renderScore2(board.players[1])
             break;
