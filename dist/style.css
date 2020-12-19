@@ -1,0 +1,50 @@
+body {
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    background-color: rgb(247, 244, 234);
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    border: solid rgb(141, 169, 196) 2px;
+    margin: 0;
+    display: inline-block;
+    /* height: fit-content; */
+    
+}
+
+#board-container {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: fit-content;
+   
+}
+
+.scores-container {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "o t";
+    border: solid rgb(141, 169, 196) 2px;
+    background-color: rgb(234, 244, 244);
+}
+
+.score1-container {
+    grid-area: o;
+}
+
+.score2-container {
+    grid-area: t;
+}
+.plus2 {
+    background-color: rgb(128, 161, 212);
+    width: 80px;
+    height: 80px;
+    
+}
+.plus1 {
+background-color: rgb(117, 201, 200);
+width: 80px;
+height: 80px;
+}

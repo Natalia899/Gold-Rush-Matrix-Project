@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gold Rush</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id='board-container'></div>
+    <div class='scores-container'>
+        <div id='score1-container'></div>
+        <div id='score2-container'></div>
+    </div>
+    <div id='input'>
+        <input id='rowNum'>
+        <input id='colNum'>
+        <button id='start'>Start</button>
+    </div>
+
+    <script id="board-template" type="text/x-handlebars-template">
+        {{#each matrix}} 
+        <div class='row'>{{#each this}} 
+              <div class='square'>
+                  <div class='plus{{this}}'>{{this}}</div>
+                </div>
+              {{/each}}</div>
+      {{/each}}
+          
+    </script>
+
+    <script id="score1-template" type="text/x-handlebars-template">
+       <div class='player1Score'>Player 1: {{score}} </div>
+    </script>
+    <script id="score2-template" type="text/x-handlebars-template">
+        <div class='player2Score'>Player 2: {{score}} </div>
+     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='./handlebars/dist/handlebars.js'></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src='Matrix.js'></script>
+    <script src='renderer.js'></script>
+    <script src='GoldRush.js'></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
