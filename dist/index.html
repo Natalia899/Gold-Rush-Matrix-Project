@@ -31,7 +31,7 @@
         {{#each matrix}} 
         <div class='row'>{{#each this}} 
               <div class='square'>
-                  <div class='{{this}}'>{{this}}</div>
+                  <div class='plus{{this}}'>{{this}}</div>
                 </div>
               {{/each}}</div>
       {{/each}}
@@ -45,15 +45,12 @@
         <div class='player2Score'>Player 2: {{score}} </div>
      </script>
 
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src='./handlebars/dist/handlebars.js'></script>
     <script src="./jquery/dist/jquery.js"></script>
     <script src='Matrix.js'></script>
-    <script src='GoldRush.js'></script>
     <script src='renderer.js'></script>
+    <script src='GoldRush.js'></script>
     <script src='main.js'></script>
 </body>
 

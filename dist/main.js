@@ -21,13 +21,11 @@ $(document).keypress(function (e) {
         case 119:
             board.movePlayer(1, "up")
             render.renderBoard(data)
-            //console.log(scores);
             render.renderScore1(board.players[0])
             break;
         case 115:
             board.movePlayer(1, "down")
             render.renderBoard(data)
-            //  console.log(scores);
             render.renderScore1(board.players[0])
             break;
         case 97:

@@ -1,6 +1,7 @@
 body {
     font-family: 'Caveat', cursive;
     font-size: large;
+    background-color: rgb(247, 244, 234);
 }
 
 .square {
@@ -9,17 +10,15 @@ body {
     border: solid rgb(141, 169, 196) 2px;
     margin: 0;
     display: inline-block;
+    /* height: fit-content; */
+    
 }
 
 #board-container {
-    /* 
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   grid-template-areas:  "s s s s s"; */
     margin-left: 25%;
     margin-top: 5%;
     width: fit-content;
-    background-color: beige;
+   
 }
 
 .scores-container {
@@ -37,4 +36,15 @@ body {
 
 .score2-container {
     grid-area: t;
+}
+.plus2 {
+    background-color: rgb(128, 161, 212);
+    width: 80px;
+    height: 80px;
+    
+}
+.plus1 {
+background-color: rgb(117, 201, 200);
+width: 80px;
+height: 80px;
 }
